@@ -1,0 +1,20 @@
+{
+  "name": "qa-technical-test",
+  "version": "1.0.0",
+  "description": "QA technical test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elizabeth Thomas",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^12.17.4",
+    "ts-loader": "^9.5.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/support/step_definitions/*.js"
+  }
+}
